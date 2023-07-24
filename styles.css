@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope");
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manrope";
+}
+
+#container {
+    background-color: hsl(217, 19%, 24%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 337px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 75px;
+    margin-bottom: 100px;
+}
+
+#header {
+    color: hsl(150, 100%, 66%);
+    font-weight: normal;
+    font-size: x-small;
+    letter-spacing: 3px;
+}
+
+#text_div {
+    font-size: 28px;
+    padding-top: 18px;
+    padding-bottom: 25px;
+    color: hsl(193, 38%, 86%);
+    font-weight: 800;
+    width: 295px;
+}
+
+#divider {
+    content: url(./images/pattern-divider-mobile.svg);
+}
+
+button {
+    background-color: hsl(150, 100%, 66%);
+    outline: none;
+    border: none;
+    border-radius: 100%;
+    padding: 20px;
+    padding-bottom: 18px;
+    position: absolute;
+    bottom: -30px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+button:hover {
+    box-shadow: 0 0 40px hsl(150, 100%, 66%);
+}
+
+@media (min-width: 600px) {
+    #container {
+        width: 550px;
+        padding-top: 45px;
+        border-radius: 15px;
+    }
+
+    #header {
+        font-size: small;
+    }
+
+    #text_div {
+        width: 444px;
+        padding-top: 25px;
+        padding-bottom: 40px;
+    }
+
+    #divider {
+        content: url(./images/pattern-divider-desktop.svg);
+    }
+}
